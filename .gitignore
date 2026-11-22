@@ -228,3 +228,11 @@ dist/
 build/
 *.egg-info/
 .pytest_cache/
+agenttape_venv/
+venv/
+.venv/
+__pycache__/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
