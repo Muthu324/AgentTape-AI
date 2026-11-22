@@ -125,7 +125,7 @@ with httpx.Client(transport=replayer.create_mock_transport()) as client:
 
 This infrastructure is verified to pass inside zero-internet enterprise configurations. By modifying your continuous integration environment routing to point outbound requests back to the local device (`127.0.0.1`), AgentTape guarantees your tests run 100% offline.
 
-\`\`\`yaml
+
 
 ## Inside .github/workflows/agenttape-ci.yml
 
