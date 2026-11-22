@@ -27,7 +27,7 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install httpx pytest
+        pip install httpx pytest langgraph
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         pip install -e .
 
@@ -45,6 +45,7 @@ jobs:
     - name: Execute Offline Replay Matrix
       env:
         AGENT_TAPE_MODE: replay  # Forces engine to read from checked-in .tape files
+        PYTHONPATH: .
       run: |
         pytest tests/ -v --durations=0
 
