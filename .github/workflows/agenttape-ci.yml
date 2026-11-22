@@ -44,7 +44,8 @@ jobs:
     # Because AgentTape mocks the transport layer, this costs $0.00 in tokens.
     - name: Execute Offline Replay Matrix
       env:
-        AGENT_TAPE_MODE: replay  # Forces engine to read from checked-in .tape files
+        AGENT_TAPE_MODE: replay # Forces engine to read from checked-in .tape files
+        PYTHONPATH: .
       run: |
         pytest tests/ -v --durations=0
 
