@@ -1,4 +1,4 @@
-# 📼 AgentTape
+# 📼 AgentTape-AI
 
 ### *Deterministic Sandboxing, Semantic Mocking, and Air-Gapped Testing Infrastructure for Multi-Agent AI Frameworks.*
 
