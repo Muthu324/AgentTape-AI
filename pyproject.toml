@@ -42,8 +42,6 @@ Issues = "https://github.com/Muthu324/agenttape/issues"
 
 
 [tool.pytest.ini_options]
-minversion = "7.0"
+pythonpath = ["."]
 addopts = "-ra -q"
-testpaths = [
-    "tests",
-]
+testpaths = ["tests"]
